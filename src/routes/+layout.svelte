@@ -6,6 +6,7 @@
 </script>
 
 <svelte:head>
+	<title>Portfolio domuen</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
