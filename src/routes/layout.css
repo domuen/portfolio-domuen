@@ -1,5 +1,42 @@
 @import 'tailwindcss';
 
 body {
-    background-color: #101010;
+    background-color: oklch(13% 0.028 261.692);
+    font-family: "Nunito", sans-serif;
+    line-height: normal;
+    white-space: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: large;
+}
+
+h4 {
+    font-size: medium;
+}
+
+h5 {
+    font-size: small;
+}
+
+h6 {
+    font-size: smaller;
 }
