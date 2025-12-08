@@ -1,47 +1,25 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import PersonCard from "./components/PersonCard.svelte";
+  import ContactCard from "./components/ContactCard.svelte";
+  import ResumeCard from "./components/ResumeCard.svelte";
+
+  import PersonalProjectsCard from "./components/PersonalProjectsCard.svelte";
 </script>
 
-<main>
-  <div>
-    <a href="https://vite.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
+<div class="flex justify-center p-4 gap-4">
+  <div class="flex lg:flex-row flex-col w-6xl gap-4">
+    <!-- left column -->
+    <div class="flex flex-col lg:w-1/3 w-full gap-4">
+      <PersonCard />
+
+      <ContactCard />
+
+      <ResumeCard />
+    </div>
+
+    <!-- right column -->
+    <div class="flex flex-col lg:w-2/3 w-full gap-4">
+      <PersonalProjectsCard />
+    </div>
   </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
-
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
-</style>
+</div>
