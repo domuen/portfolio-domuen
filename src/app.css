@@ -2,12 +2,11 @@
 
 :root {
   font-family: "Nunito", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  line-height: normal;
+  white-space: normal;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: oklch(13% 0.028 261.692);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +14,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+h4 {
+  font-size: medium;
+}
+
+h5 {
+  font-size: small;
+}
+
+h6 {
+  font-size: smaller;
+}
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -78,4 +111,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
